@@ -1,0 +1,12 @@
+5
+x y z i j
+2
+a b
+z y
+z z
+i z
+j x
+x x
+x
+1
+j

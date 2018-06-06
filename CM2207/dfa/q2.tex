@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning,arrows.meta}
+\usepackage[graphics,tightpage,active,pdftex]{preview}
+\setlength{\PreviewBorder}{5pt}
+\PreviewEnvironment{tikzpicture}
+\begin{document}
+\begin{tikzpicture}[>={Stealth[width=6pt,length=9pt]}, accepting/.style={double distance = 2pt, outer sep = 1pt + \pgflinewidth}, shorten >=1pt, auto]
+  \draw (50.0pt, -50.0pt)node[state, accepting](0){(A,y)};
+  \draw (250.0pt, -150.0pt)node[state](1){(B,y)};
+  \draw (150.0pt, -150.0pt)node[state](2){(B,z)};
+  \draw (150.0pt, -50.0pt)node[state](3){(A,z)};
+  \draw (250.0pt, -50.0pt)node[state](4){(B,x)};
+  \draw (50.0pt, -150.0pt)node[state, initial, initial text =, accepting](5){(A,x)};
+  \path[->] (5) edge node{a}(2);
+  \path[->] (2) edge[loop above] node{b}(2);
+  \path[->] (3) edge[loop above] node{b}(3);
+  \path[->] (0) edge[bend left] node{a}(2);
+  \path[->] (2) edge[bend left] node{a}(0);
+  \path[->] (1) edge node{b}(2);
+  \path[->] (5) edge node{b}(0);
+  \path[->] (0) edge node{b}(3);
+  \path[->] (1) edge[bend left] node{a}(3);
+  \path[->] (3) edge[bend left] node{a}(1);
+  \path[->] (4) edge node{a}(3);
+  \path[->] (4) edge node{b}(1);
+\end{tikzpicture}
+\end{document}

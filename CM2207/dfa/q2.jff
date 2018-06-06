@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<structure>
+	<type>fa</type>
+	<state name="(A,x)" id="0"><final/><initial/></state>
+	<state name="(B,z)" id="1"></state>
+	<state name="(B,y)" id="2"></state>
+	<state name="(B,x)" id="3"></state>
+	<state name="(A,y)" id="4"><final/></state>
+	<state name="(A,z)" id="5"></state>
+	<transition>
+		<from>0</from>
+		<to>1</to>
+		<read>a</read>
+	</transition>
+	<transition>
+		<from>0</from>
+		<to>4</to>
+		<read>b</read>
+	</transition>
+	<transition>
+		<from>1</from>
+		<to>4</to>
+		<read>a</read>
+	</transition>
+	<transition>
+		<from>1</from>
+		<to>1</to>
+		<read>b</read>
+	</transition>
+	<transition>
+		<from>2</from>
+		<to>5</to>
+		<read>a</read>
+	</transition>
+	<transition>
+		<from>2</from>
+		<to>1</to>
+		<read>b</read>
+	</transition>
+	<transition>
+		<from>3</from>
+		<to>5</to>
+		<read>a</read>
+	</transition>
+	<transition>
+		<from>3</from>
+		<to>2</to>
+		<read>b</read>
+	</transition>
+	<transition>
+		<from>4</from>
+		<to>1</to>
+		<read>a</read>
+	</transition>
+	<transition>
+		<from>4</from>
+		<to>5</to>
+		<read>b</read>
+	</transition>
+	<transition>
+		<from>5</from>
+		<to>2</to>
+		<read>a</read>
+	</transition>
+	<transition>
+		<from>5</from>
+		<to>5</to>
+		<read>b</read>
+	</transition>
+</structure>
