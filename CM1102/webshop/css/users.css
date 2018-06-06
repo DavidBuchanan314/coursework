@@ -1,0 +1,20 @@
+table {
+	border-collapse: collapse;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+table, th, td {
+	border: 2px solid rgba(255, 255, 255, 0.8);
+	padding: 1em;
+}
+
+form select {
+	margin: 0 !important;
+}
+
+table input {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+}

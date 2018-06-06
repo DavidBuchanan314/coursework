@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>TEST</title>
+	</head>
+	<body>
+		<canvas id="triangles"></canvas>
+		<header>
+			<h1>Totally Legit Payment Form</h1>
+		</header>
+		<section id="ccsection">
+			<noscript>
+				<div><p><strong>In the interest of arbitrary requirements, JavaScript is required in order to use this page.</strong></p></div>
+			</noscript>
+			<form id="ccform">
+				<div class="formsection">
+					<input name="ccname" id="ccname" placeholder="Name on card" />
+				</div>
+				<div class="formsection">
+					<input name="ccnum" id="ccnum" placeholder="Card Number" />
+					<input name="ccexpm" id="ccexpm" placeholder="MM" /><input name="ccexpy" id="ccexpy" placeholder="YY" /><input name="cvc" id="cvc" placeholder="CVC" />
+				</div>
+				<div class="formsection tooltips">
+					<p id="help">Please enter your details</p>
+				</div>
+				<div id="errors" class="formsection error hidden">
+					
+				</div>
+				<div class="formsection">
+					<input type="submit" value="Submit" id="submitbtn" />
+				</div>
+			</form>
+		</section>
+		<script type="text/javascript" src="triangles.js"></script>
+		<script type="text/javascript" src="verify.js"></script>
+	</body>
+</html>

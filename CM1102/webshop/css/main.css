@@ -1,0 +1,196 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	font-family: sans-serif;
+}
+
+html {
+	background-color: #002;
+	height: 100%;
+}
+
+body {
+	position: relative;
+	padding-bottom: 8em;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
+input, select, textarea {
+	padding: 0.5rem;
+	margin: 1em auto;
+	width: 100%;
+	display: block;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #FFF;
+}
+
+option {
+	color: #000;
+}
+
+input[type="submit"]:hover {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+input, select, textarea {
+	color: #000;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h1 {
+	margin-bottom: 1em;
+}
+
+header {
+	width: 100%;
+}
+
+header img {
+	margin-top: 1em;
+	width: 100%;
+}
+
+nav {
+	border-top: 2px solid #00B;
+	margin-bottom: 2em;
+	background-color: rgba(255, 255, 255, 0.1);
+	overflow: hidden;
+}
+
+nav form {
+	padding-right: 15rem;
+	position: relative;
+}
+
+/* Search Box */
+nav input, nav select {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	height: 2.7em;
+	vertical-align:middle;
+}
+
+nav select {
+	position: absolute;
+	top: 0;
+	right: 5rem;
+	width: 10rem;
+	margin: 0;
+}
+
+nav input[type="search"] {
+	border-radius: 0.5rem 0 0 0.5rem;
+	/* font-size: 12pt; */
+}
+
+nav input[type="submit"] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 5rem;
+	margin: 0;
+	border-radius: 0 0.5rem 0.5rem 0;
+}
+
+nav li:last-child, nav li:nth-last-child(2) {
+	float: right;
+}
+
+nav li:first-child {
+	margin-left: 0;
+}
+
+nav li {
+	display: inline;
+	float: left;
+	margin-left: 4px;
+}
+
+nav a {
+	display: inline-block;
+	border-bottom: 4px solid #f24;
+	background-color: rgba(255, 255, 255, 0.1);
+	text-decoration: none;
+	padding: 0.5em 1em;
+}
+
+nav .selected {
+	border-bottom: 4px solid #f46;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.centered {
+	max-width: 768px;
+	margin: auto;
+}
+
+.content {
+	width: 100%;
+}
+
+.content p {
+	margin: 1em 0;
+}
+
+#bgcanvas {
+	width: 100%;
+	height: 50vw;
+	position: absolute;
+	z-index: -2;
+	image-rendering: pixelated;
+}
+
+#bgoverlay {
+	width: 100%;
+	height: 50vw;
+	position: absolute;
+	z-index: -1;
+	background: linear-gradient(rgba(0, 0, 34, 0), rgba(0, 0, 34, 1));
+}
+
+.formsection {
+	max-width: 302px;
+	padding: 2em;
+	margin: auto;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.formsection input, textarea {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.formsection {
+	margin-bottom: 2em;
+}
+
+.formsection select {
+	margin: 1em 0;
+}
+
+.formsection label {
+	display: block;
+	margin-bottom: -0.7em; /* hacky */
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+	margin: 1em;
+}

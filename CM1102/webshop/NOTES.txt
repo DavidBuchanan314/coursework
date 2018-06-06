@@ -1,0 +1,16 @@
+Extra Features:
+
+- Security:
+	- XSS protection
+	- CSRF protection
+	- SQLi protection
+	- Clickjacking protection
+	- Email based account recovery
+	- Variable user permission levels
+
+- Email notifications
+
+- Admin facilities:
+	- Adjust user privliges
+	- Add items (Note - items are immutable, so customers can always see what they bought in the past if the item changes)
+	- Adjust stock counts

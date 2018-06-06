@@ -1,0 +1,62 @@
+.products > ul > li {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	margin: 1em 0;
+	padding: 1em 1em 1em 10em;
+	position: relative;
+	overflow: hidden;
+}
+
+.products > ul > li > h2 {
+	margin-bottom: 0.5em;
+}
+
+.products > ul > li > p {
+	margin-bottom: 0.5em;
+}
+
+.products > ul > li > img {
+	width: 8em;
+	/*border: 1px solid rgba(255, 255, 255, 0.3);*/
+	background-color: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	/*margin: 1em;*/
+	filter: saturate(200%);
+}
+
+.products > ul > li > ul {
+	list-style-type: initial;
+	margin-left: 2em;
+	font-size: 11pt;
+}
+
+.basketadd {
+	float: right;
+}
+
+.basketadd input {
+	width: initial;
+	margin: 0;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 3px solid #FFF;
+	border-radius: 6px;
+	color: #FFF;
+	font-weight: bold;
+	text-shadow: 0 0 2px #000;
+}
+
+.truncated { /* https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/ */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.basketadd .soldout {
+	border: 3px solid #F24;
+}
+
+.basketadd .bought {
+	border: 3px solid #00B;
+}
